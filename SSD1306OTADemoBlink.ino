@@ -44,7 +44,7 @@ void setup() {
 
   // int BUILTIN_LED = 13; 
   pinMode(BUILTIN_LED, OUTPUT);  // initialize onboard LED as output
-  
+// ************************** Begin OTA and display) **************************  
   WiFi.begin ( ssid, password );
 
   // Wait for connection
@@ -84,7 +84,9 @@ void setup() {
   display.drawString(DISPLAY_WIDTH/2, DISPLAY_HEIGHT/2, "Ready for OTA:\n" + WiFi.localIP().toString());
   display.display();
 }
- 
+// ************************** End OTA and display) **************************  
+
+
 void loop() {
   ArduinoOTA.handle();
 //void loop()
