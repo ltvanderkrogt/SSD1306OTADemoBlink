@@ -34,8 +34,8 @@
 // Display includes
 #include "SSD1306.h" // alias for `#include "SSD1306Wire.h"`
 
-char *ssid = "your_network";    //  your network SSID (name) //For OTA use the same network for ESP and PC
-char *password = "your_key";   // your network password
+char *ssid = "pelikaan";    //  your network SSID (name) //For OTA use the same network for ESP and PC
+char *password = "8270000928";   // your network password
 
 // Initialize the OLED display using Wire library
 SSD1306  display(0x3c, 4, 5);   //display(I2C address, SDA, SCL)
@@ -96,3 +96,4 @@ void loop() {
   delay(1000);                      // wait one second
   
 }
+
